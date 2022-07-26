@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins'; 
+}
+
+
+body{
+    background: linear-gradient(270deg, #FFFFFF 0%, #D0DBFF 93.19%);
+    overflow-x: hidden;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* nav Section Start */
+
+nav{
+    margin-top: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: rgba(93, 95, 239, 1);
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.75rem;
+    border: 20px;
+    border-color: #ffffff;
+    box-shadow:  0px 4px 4px rgba(255, 255, 255, 0.25);
+    position: relative;
+}
+
+.nav-custom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.25rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 00.25rem;
+    align-items: center;
+}
+
+.nav-left{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 100%;
+    height: auto;
+}
+
+.nav-right{
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links-custom{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-primary-custom{
+    padding: 0 16px;
+    display: block;
+    width: 10%;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 36px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: #fff;
+}
+.link-secondary-custom{
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+    color: #BABEC1;
+    width: 20%;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 36px;
+}
+
+a:hover{
+    text-shadow: 0 0 35px #fff;
+    transition: ease-in(1s);
+}
+
+
+.nav-search-box{
+    align-items: center;
+    width: 50%;
+    padding-right: 1rem;
+    
+}
+
+
+.search-box{
+    background: #fff;
+    width: 100%;
+    height: 40px;
+    font-size: small;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.button-area-custom{
+    width: 20%;
+}
+
+
+button.btn-secondary-custom{
+    background:none;
+    width: 100%;
+    border-width: 3px;
+    border-radius: 12px;
+    border-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    align-items: center;
+    color:#fff;
+    transition: ease-out 1s;
+}
+
+button.btn-secondary-custom:hover{
+    background: #000AFF 93.19%;
+    box-shadow: 0 0 35px #9593FF;
+    transition: ease-in(1s);
+}
+
+/* Hamburger */
+
+.nav-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.nav-toggle span{
+    display: none;
+    width: 28px;
+    height: 3px;
+    background-color: #c5cbff;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Animation */
+
+.nav-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.nav-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+
+.nav-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: #fff;
+}
+
+.nav-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: #fff;
+}
+
+.nav-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Hamburger End */
+/* Nav Section End */
+/* Section Hero Start */
+
+.section-hero-custom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
+    margin-top: 2rem;
+    
+    
+    z-index: -1;
+}
+
+.hero-left{
+    width: 50%;
+    padding-top: 64px;
+}
+.hero-text{
+    width: 70%;
+    display: flex;
+    color: #000273;
+    font-weight : 700;
+    font-size: 48px;
+    letter-spacing: -2.2%;
+    line-height: normal;
+    padding-bottom: 16px;
+}
+
+.hero-paragraph{
+    width: 70%;
+    color: #5494EC;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+
+button.btn-primary-custom{
+    background: linear-gradient(263.25deg, #9593FF 11.8%, #000AFF 95.64%);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    align-items: center;
+    color:#fff;
+    transition: ease-out 1s;
+}
+
+button.btn-primary-custom:hover{
+    border-color: #fff;
+    background: #000AFF 93.19%;
+    box-shadow: 0 0 35px #9593FF;
+    transition: ease-in(1s);
+}
+
+.herooo{
+    width: 70%;
+}
+
+.hero-right{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Hero End */
+/* Section Top NFT Start */
+
+
+.sec-topnft{
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.section-head-custom{
+    width: 100%;
+    display: flex;
+
+}
+
+.top-nft-title{
+    margin-top: 10rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.h2-custom{
+    font-weight: 600;
+    color: #000273;
+    padding-left: 1rem;
+}
+
+a.see-more{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000273;
+    padding-right: 1rem;
+}
+
+.cards-custom{
+    width: 80%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.card-custom{
+    background: #fff;
+    border-radius: 0.75rem;
+    width: max-content;
+}
+
+.panel-custom{
+    color: #000273;
+    text-decoration: none;
+    width: 24rem;
+    display: grid;
+    height: fit-content;
+}
+
+.card-custom:hover{
+    transform: scale(1.02);
+    transition: ease-out 0.3s;
+    box-shadow: 0px 4px 8px #fff;
+    text-decoration: none;
+}
+
+
+.card-title-custom{
+    padding-left: 1rem;
+    align-self: center;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.nft-variant{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #A5A6F6;
+}
+
+.card-isi-custom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+   font-size: 1rem;
+}
+
+img.card-img{
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.text-paragraph-custom{
+    color: #989B9D;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.jumlah-eth{
+    font-weight: 600;
+}
+
+.inline-icons{
+    padding-left: 1rem;
+}
+
+/* End Section Top NFTs */
+/* Start Section How To */
+
+.sec-howto{
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
+    margin-top: 10rem;
+    background: #290073; 
+    padding-left: 4.625rem;
+    padding-right: 4.625rem;
+    padding-top: 4.625rem;
+    padding-bottom: 4.625rem;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.sec-howto-custom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h2-center{
+    text-align: center;
+    align-self: center;
+    padding-bottom: 4rem ;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card-sec-howto{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    height: fit-content;
+}
+
+.text-section-custom{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.h4-custom{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Sec How To Ends */
+/* Start Of Section Top Collection */
+
+.sec-topcol{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 4.625rem;
+}
+
+.sec-topcol-hero{
+    width: 50%;
+}
+
+.hero-2{
+    left: 4.5rem;
+    position: absolute;
+}
+
+.topcol-section{
+    width: 50%;
+    margin-left: 40rem;
+    margin-right: 9.375rem;
+    padding-top: 3.5rem;
+    
+}
+
+
+.topcol-section-title{
+    padding-bottom: 0.5rem;
+}
+
+.topcol-section-cards{
+    text-decoration: none;
+}
+
+.topcol-card{
+    display: flex;
+    background: #fff;
+    border: 1px solid rgba(93, 95, 239, 1);
+    border-radius: 12px;
+    align-items: center;
+    margin-top: 1rem;
+    width: 414px;
+    height: 96px;
+    text-decoration: none;
+}
+
+.topcol-card:hover{
+    transform: scaleX(1.1);
+    transition: ease-out 0.3s;
+}
+
+.topcol-card-desc{
+    align-items: center;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.topcol-card-desc-title{
+    font-weight: 600;
+    align-self: center;
+    color: #000;
+}
+
+.topcol-card-desc-volume{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+.eth-bold{
+    font-weight: 600;
+}
+
+/* End Of Top Collection Section */
+/* Start of Footer Section */
+
+.footer-sec{
+    background: #5D5FEF;
+}
+
+.foot-sec-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
+}
+
+.foot-sec-left{
+    padding-top: 2rem;
+    gap: 2rem;
+    width: 30%;
+}
+
+.foot-left-desc{
+    padding-top: 2rem;
+    color: #E4E8EC;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.foot-left-newsletter{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.newsletter-input{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.email-box{
+    background: #fff;
+    width: 70%;
+    height: 40px;
+    font-size: small;
+    padding-left: 16px;
+    border-radius: 16px;
+    align-items: center;
+    padding-top: 00.5rem;
+}
+
+.btn-primary-custom-2{
+    background: linear-gradient(263.25deg, #9593FF 11.8%, #000AFF 95.64%);
+    border-radius: 12px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    align-items: center;
+    color:#fff;
+    transition: ease-out 1s;
+}
+
+.btn-primary-custom-2:hover{
+    border-color: #fff;
+    background: #000AFF 93.19%;
+    box-shadow: 0 0 35px #9593FF;
+    transition: ease-in(1s);
+}
+
+
+.foot-right{
+    width: 70%;
+    padding-left: 16rem;
+    padding-top: 2rem;
+    display: flex;
+}
+
+
+
+.right-link-title{
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.foot-right-links{
+    padding-top: 3rem;
+    padding-left: 6rem;
+    display: grid;
+}
+
+.foot-right-link{
+    color: #BABEC1;
+    text-decoration: none;
+}
+
+.foot-sec-copyright-area{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+
+    .nav-right{
+        right: 0;
+        left: 3rem;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    .nav-links-custom{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        padding 0;
+        margin 0;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(93, 95, 239, 1);
+        border-radius: 12px;
+        transform: translateX(120%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .nav-links-custom.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .button-area-custom{
+        width: 80%;
+    }
+
+    .nav-search-box{
+        width: 80%;
+        padding-left: 0rem;
+    }
+
+.link-primary-custom{
+    width: 40%;
+}
+
+.link-secondary-custom{
+    width: 40%;
+}
+
+    .nav-toggle span{
+        display: block;
+    }
+
+
+    .section-hero-custom{
+        z-index: -1;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .hero-left{
+        width: 100%;
+        margin: 5vw;
+    }
+
+    .hero-paragraph, .hero-text {
+        width: 80%;
+    }
+
+    .herooo{
+        width: 80%;
+    }
+
+/* Top NFT Mobile View */
+
+.sec-topnft{
+    margin: 5vw;
+    width: 100%;
+}
+
+.section-head-custom{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
